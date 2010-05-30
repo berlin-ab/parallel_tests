@@ -3,6 +3,7 @@ require 'rubygems'
 require 'optparse'
 lib_folder = File.join(File.dirname(__FILE__), '..', 'lib')
 require File.join(lib_folder, "parallel_tests")
+require File.join(lib_folder, "file_group")
 
 options = {}
 OptionParser.new do |opts|
