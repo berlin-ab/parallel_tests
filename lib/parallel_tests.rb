@@ -69,11 +69,6 @@ class ParallelTests
     line =~ /(\d{2,}|[1-9]) (failure|error)/
   end
 
-  def self.group_size(tests_with_sizes, num_groups)
-    total_size = tests_with_sizes.inject(0) { |sum, test| sum += test[1] }
-    total_size / num_groups.to_f
-  end
-
   def self.test_suffix
     "_test.rb"
   end
